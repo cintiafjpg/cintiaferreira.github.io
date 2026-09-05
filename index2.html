@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cíntia Ferreira</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #fff;
+    color: #111;
+    font-family: "EB Garamond", Garamond, serif;
+    font-size: 18px;
+    line-height: 1.25;
+}
+
+/* ---------- MENU ---------- */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 22px 25px;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.site-title {
+    position: absolute;
+    left: 25px;
+    top: 18px;
+    font-size: clamp(24px, 3.2vw, 48px);
+    line-height: .82;
+    text-transform: uppercase;
+    pointer-events: auto;
+    width: fit-content;
+}
+
+nav {
+    position: absolute;
+    right: 25px;
+    top: 22px;
+    text-align: right;
+    pointer-events: auto;
+}
+
+nav a {
+    display: block;
+    color: #111;
+    text-decoration: none;
+    transition: opacity .2s ease;
+}
+
+nav a:hover {
+    opacity: .45;
+}
+
+nav .space {
+    height: 18px;
+}
+
+/* ---------- HOME ---------- */
+
+.home {
+    height: 100vh;
+    min-height: 650px;
+}
+
+/* ---------- PAGES ---------- */
+
+.page {
+    padding: 150px 25px 100px;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.project-title {
+    text-align: center;
+    font-size: clamp(30px, 4vw, 60px);
+    margin-bottom: 90px;
+}
+
+.project-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.project-info .press {
+    text-align: right;
+}
+
+.project-info p {
+    margin: 0 0 20px;
+}
+
+.project-info a {
+    color: inherit;
+}
+
+/* ---------- IMAGES ---------- */
+
+.image-large {
+    width: 100%;
+    display: block;
+    margin: 0 auto 100px;
+}
+
+.image-medium {
+    width: 70%;
+    display: block;
+    margin: 0 auto 100px;
+}
+
+.image-small {
+    width: 45%;
+    display: block;
+    margin: 0 auto 100px;
+}
+
+.two-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 100px;
+}
+
+.two-images img {
+    width: 100%;
+    display: block;
+}
+
+/* ---------- VIDEO ---------- */
+
+.video {
+    width: 100%;
+    display: block;
+    margin-bottom: 100px;
+}
+
+video {
+    width: 100%;
+    display: block;
+}
+
+/* ---------- ABOUT ---------- */
+
+.about {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: 15%;
+}
+
+.about p {
+    margin-bottom: 30px;
+}
+
+.about h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    padding: 100px 25px 40px;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 700px) {
+
+    body {
+        font-size: 17px;
+    }
+
+    header {
+        position: absolute;
+    }
+
+    .site-title {
+        position: relative;
+        left: 0;
+        top: 0;
+        font-size: 34px;
+        line-height: .82;
+        width: fit-content;
+    }
+
+    nav {
+        position: relative;
+        right: auto;
+        top: auto;
+        margin-top: 35px;
+        text-align: left;
+    }
+
+    .home {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .page {
+        padding: 300px 15px 60px;
+    }
+
+    .project-title {
+        text-align: left;
+        margin-bottom: 60px;
+    }
+
+    .project-info {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-top: 60px;
+        margin-bottom: 100px;
+    }
+
+    .project-info .press {
+        text-align: left;
+    }
+
+    .image-large,
+    .image-medium,
+    .image-small {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .two-images {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-bottom: 50px;
+    }
+
+    .about {
+        margin: 0;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+```
+<div class="site-title">
+    CÍNTIA<br>
+    FERREIRA
+</div>
+
+<nav>
+
+    <a href="#evidencias">Evidências</a>
+    <a href="#memorabilia">Memorabilia</a>
+    <a href="#memento">Memento</a>
+    <a href="#deja-vu">Déjà vu</a>
+    <a href="#selected">Selected Works</a>
+
+    <div class="space"></div>
+
+    <a href="#about">About</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+
+</nav>
+```
+
+</header>
+
+<!-- HOME -->
+
+<main class="home">
+</main>
+
+<!-- EVIDÊNCIAS -->
+
+<section id="evidencias" class="page">
+
+```
+<div class="project-title">
+    EVIDÊNCIAS
+</div>
+
+<img src="images/evidencias/01.jpg"
+     class="image-large"
+     alt="Evidências">
+
+<div class="two-images">
+
+    <img src="images/evidencias/02.jpg"
+         alt="Evidências">
+
+    <img src="images/evidencias/03.jpg"
+         alt="Evidências">
+
+</div>
+
+<img src="images/evidencias/04.jpg"
+     class="image-large"
+     alt="Evidências">
+
+<div class="two-images">
+
+    <img src="images/evidencias/05.jpg"
+         alt="Evidências">
+
+    <img src="images/evidencias/06.jpg"
+         alt="Evidências">
+
+</div>
+
+<div class="project-info">
+
+    <div class="press">
+
+        <p>
+            <strong>Press</strong><br>
+            Brotéria AGO/SET 2026<br>
+            Teresa Rasquilha
+        </p>
+
+        <p>
+            Casa da Dona Laura<br>
+            Rua do Salitre, 113<br>
+            Lisbon<br>
+            20–24 Jun, 2026
+        </p>
+
+    </div>
+
+    <div>
+
+        <p>
+            Evidências brings together images produced since
+            2022 from gestures of collection, accumulation,
+            and transformation: a visual, almost archaeological,
+            archive where obsessions and fascinations are revealed.
+        </p>
+
+        <p>
+            Starting from the practice of collecting traces and
+            fragments of the outside world, the artist explores
+            the tensions with the inner world in her first
+            solo exhibition.
+        </p>
+
+        <p>
+            Between the documentary and the dreamlike, the
+            photographs presented transform remnants and signs
+            of existence into emotional and autobiographical
+            objects, revealing a process of self-knowledge,
+            transformation, and (re)construction of the self.
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- MEMORABILIA -->
+
+<section id="memorabilia" class="page">
+
+```
+<div class="project-title">
+    MEMORABILIA
+</div>
+
+<img src="images/memorabilia/01.jpg"
+     class="image-large"
+     alt="Memorabilia">
+
+<div class="two-images">
+
+    <img src="images/memorabilia/02.jpg"
+         alt="Memorabilia">
+
+    <img src="images/memorabilia/03.jpg"
+         alt="Memorabilia">
+
+</div>
+
+<img src="images/memorabilia/04.jpg"
+     class="image-large"
+     alt="Memorabilia">
+```
+
+</section>
+
+<!-- MEMENTO -->
+
+<section id="memento" class="page">
+
+```
+<div class="project-title">
+    MEMENTO
+</div>
+
+<img src="images/memento/01.jpg"
+     class="image-large"
+     alt="Memento">
+
+<div class="two-images">
+
+    <img src="images/memento/02.jpg"
+         alt="Memento">
+
+    <img src="images/memento/03.jpg"
+         alt="Memento">
+
+</div>
+
+<img src="images/memento/04.jpg"
+     class="image-large"
+     alt="Memento">
+```
+
+</section>
+
+<!-- DÉJÀ VU -->
+
+<section id="deja-vu" class="page">
+
+```
+<div class="project-title">
+    DÉJÀ VU
+</div>
+
+<img src="images/deja-vu/still01.jpg"
+     class="image-large"
+     alt="Déjà vu">
+
+<div class="two-images">
+
+    <img src="images/deja-vu/still02.jpg"
+         alt="Déjà vu">
+
+    <img src="images/deja-vu/still03.jpg"
+         alt="Déjà vu">
+
+</div>
+
+<img src="images/deja-vu/still04.jpg"
+     class="image-large"
+     alt="Déjà vu">
+
+<div class="project-info">
+
+    <div class="press">
+
+        <p>
+            <strong>Déjà vu</strong><br>
+            Short film / essay film<br>
+            2025–2026
+        </p>
+
+        <p>
+            Câmpulung Film Fest<br>
+            Romania
+        </p>
+
+    </div>
+
+    <div>
+
+        <p>
+            A young woman searches for traces of herself
+            through a prehistoric monument swallowed by
+            urban space.
+        </p>
+
+        <p>
+            Driven by déjà vu, she returns to a place she
+            grew up in, repeating gestures of observation,
+            collection and revelation.
+        </p>
+
+        <p>
+            The film explores photography as an archaeological
+            gesture and the relationship between memory,
+            territory and identity.
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- SELECTED WORKS -->
+
+<section id="selected" class="page">
+
+```
+<div class="project-title">
+    SELECTED WORKS
+</div>
+
+<img src="images/selected/01.jpg"
+     class="image-large"
+     alt="Selected work">
+
+<div class="two-images">
+
+    <img src="images/selected/02.jpg"
+         alt="Selected work">
+
+    <img src="images/selected/03.jpg"
+         alt="Selected work">
+
+</div>
+
+<img src="images/selected/04.jpg"
+     class="image-large"
+     alt="Selected work">
+```
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="page">
+
+```
+<div class="project-title">
+    ABOUT
+</div>
+
+<div class="about">
+
+    <p>
+        Cíntia Ferreira (Lisbon, 1999) is a multidisciplinary
+        artist working across photography, sculpture, film
+        and performance.
+    </p>
+
+    <p>
+        Her practice explores memory, identity, territory
+        and the archive through processes of collection,
+        observation and reconstruction.
+    </p>
+
+    <p>
+        Her work often approaches photography as an
+        archaeological gesture, investigating fragments,
+        traces and vestiges as forms of personal and
+        collective memory.
+    </p>
+
+    <h2>Selected exhibitions & screenings</h2>
+
+    <p>
+        2026 — Evidências, Casa da Dona Laura, Lisbon
+    </p>
+
+    <p>
+        2026 — Déjà vu, Câmpulung Film Fest, Romania
+    </p>
+
+    <h2>Press</h2>
+
+    <p>
+        Brotéria, 2026
+    </p>
+
+    <p>
+        Umbigo, 2026
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- CV -->
+
+<section id="cv" class="page">
+
+```
+<div class="project-title">
+    CV
+</div>
+
+<div class="about">
+
+    <h2>Education</h2>
+
+    <p>
+        Faculdade de Belas-Artes da Universidade de Lisboa
+    </p>
+
+    <h2>Exhibitions</h2>
+
+    <p>
+        2026 — Evidências, Casa da Dona Laura, Lisbon
+    </p>
+
+    <h2>Film</h2>
+
+    <p>
+        Déjà vu — 2025–2026
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="page">
+
+```
+<div class="project-title">
+    CONTACT
+</div>
+
+<div class="about">
+
+    <p>
+        Cíntia Ferreira
+    </p>
+
+    <p>
+        Lisbon, Portugal
+    </p>
+
+    <p>
+        <a href="mailto:TEUEMAIL@email.com">
+            TEUEMAIL@email.com
+        </a>
+    </p>
+
+    <p>
+        <a href="https://instagram.com/TEUINSTAGRAM"
+           target="_blank">
+            Instagram
+        </a>
+    </p>
+
+</div>
+```
+
+</section>
+
+<footer>
+    © Cíntia Ferreira
+</footer>
+
+</body>
+</html>
