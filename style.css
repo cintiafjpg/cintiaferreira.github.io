@@ -106,7 +106,7 @@ nav .space {
 /* IMAGES */
 
 .image-large {
-    width: 45%;
+    width: 100%;
     display: block;
     margin: 0 auto 100px;
 }
@@ -123,10 +123,13 @@ nav .space {
     margin: 0 auto 100px;
 }
 
+/* ISOLATED WORKS */
+
 .work.image-large img {
-    width: 100%;
+    width: 60%;
     height: auto;
     display: block;
+    margin: 0 auto;
 }
 
 /* TWO IMAGES */
@@ -145,11 +148,11 @@ nav .space {
 
 .two-images img {
     width: 100%;
-    display: block;
     height: auto;
+    display: block;
 }
 
-/* WORKS + HOVER CAPTIONS */
+/* HOVER CAPTIONS */
 
 .work {
     position: relative;
@@ -314,18 +317,32 @@ footer {
         text-align: left;
     }
 
-    .image-large,
+    /* ISOLATED WORKS ON MOBILE */
+
+    .image-large {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .work.image-large img {
+        width: 100%;
+    }
+
     .image-medium,
     .image-small {
         width: 100%;
         margin-bottom: 50px;
     }
 
+    /* TWO IMAGES ON MOBILE */
+
     .two-images {
         grid-template-columns: 1fr;
         gap: 40px;
         margin-bottom: 50px;
     }
+
+    /* CAPTIONS ON MOBILE */
 
     .work figcaption {
         position: static;
