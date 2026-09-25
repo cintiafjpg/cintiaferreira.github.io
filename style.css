@@ -126,7 +126,7 @@ nav .space {
 /* ISOLATED WORKS */
 
 .work.image-large img {
-    width: 60%;
+    width: 70%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -179,6 +179,20 @@ nav .space {
 
 .work:hover figcaption {
     opacity: 1;
+}
+.work .caption-left,
+.work .caption-right {
+    width: auto;
+    bottom: 0;
+}
+
+.work .caption-left {
+    left: 0;
+}
+
+.work .caption-right {
+    right: 0;
+    left: auto;
 }
 
 /* MEMORABÍLIA */
