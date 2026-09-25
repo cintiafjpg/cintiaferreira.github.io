@@ -123,6 +123,12 @@ nav .space {
     margin: 0 auto 100px;
 }
 
+.work.image-large img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* TWO IMAGES */
 
 .two-images {
