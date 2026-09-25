@@ -122,6 +122,30 @@ nav .space {
     display: block;
     margin: 0 auto 100px;
 }
+/* WORKS + HOVER CAPTIONS */
+
+.work {
+    position: relative;
+}
+
+.work figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.88);
+    color: #111;
+    font-size: 16px;
+    line-height: 1.2;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    pointer-events: none;
+}
+
+.work:hover figcaption {
+    opacity: 1;
+}
 
 .two-images {
     display: grid;
