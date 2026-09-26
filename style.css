@@ -397,3 +397,45 @@ footer {
         margin-bottom: 8px;
     }
 }
+
+/* CATALOG FORM */
+
+.catalog-form {
+    max-width: 600px;
+    margin-top: 60px;
+}
+
+.catalog-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.catalog-form input,
+.catalog-form textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #111;
+    padding: 8px 0;
+    margin-bottom: 30px;
+    font-family: inherit;
+    font-size: 18px;
+    background: transparent;
+}
+
+.catalog-form textarea {
+    resize: vertical;
+}
+
+.catalog-form button {
+    border: none;
+    background: none;
+    padding: 0;
+    font-family: inherit;
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.catalog-form button:hover {
+    opacity: .45;
+}
