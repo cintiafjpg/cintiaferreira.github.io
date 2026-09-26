@@ -439,3 +439,37 @@ footer {
 .catalog-form button:hover {
     opacity: .45;
 }
+/* EXHIBITION LINKS */
+
+.project-links {
+    margin-top: -35px;
+    margin-bottom: 150px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    align-items: baseline;
+
+    font-size: 16px;
+}
+
+.project-links a,
+.project-links a:visited {
+    color: #111;
+    text-decoration: none;
+}
+
+.project-links a:hover {
+    opacity: .45;
+}
+
+.project-links a:not(:last-child)::after,
+.project-links .press-link::after {
+    content: " · ";
+    padding: 0 8px;
+    opacity: .6;
+}
+
+.project-links .press-link {
+    color: #111;
+}
