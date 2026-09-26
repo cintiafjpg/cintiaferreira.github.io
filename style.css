@@ -17,6 +17,7 @@ body {
     line-height: 1.25;
 }
 
+
 /* MENU */
 
 header {
@@ -62,12 +63,14 @@ nav .space {
     height: 18px;
 }
 
+
 /* HOME */
 
 .home {
     height: 100vh;
     min-height: 650px;
 }
+
 
 /* PAGES */
 
@@ -82,6 +85,9 @@ nav .space {
     font-size: clamp(30px, 4vw, 60px);
     margin-bottom: 90px;
 }
+
+
+/* PROJECT INFORMATION */
 
 .project-info {
     display: grid;
@@ -103,6 +109,54 @@ nav .space {
     color: inherit;
 }
 
+
+/* EXHIBITION INFORMATION */
+
+.exhibition-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 50px;
+    margin-top: 180px;
+    margin-bottom: 70px;
+}
+
+.exhibition-info p {
+    margin: 0 0 20px;
+}
+
+.exhibition-press {
+    font-size: 16px;
+}
+
+.exhibition-description {
+    max-width: 700px;
+}
+
+
+/* EXHIBITION LINKS */
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: baseline;
+
+    margin-bottom: 150px;
+
+    font-size: 16px;
+}
+
+.project-links a,
+.project-links a:visited {
+    color: #111;
+    text-decoration: none;
+}
+
+.project-links a:hover {
+    opacity: .45;
+}
+
+
 /* IMAGES */
 
 .image-large {
@@ -123,6 +177,7 @@ nav .space {
     margin: 0 auto 100px;
 }
 
+
 /* ISOLATED WORKS */
 
 .work.image-large img {
@@ -131,6 +186,7 @@ nav .space {
     display: block;
     margin: 0;
 }
+
 
 /* TWO IMAGES */
 
@@ -151,6 +207,7 @@ nav .space {
     height: auto;
     display: block;
 }
+
 
 /* HOVER CAPTIONS */
 
@@ -177,13 +234,15 @@ nav .space {
     pointer-events: none;
 }
 
-/* LEGENDAS NORMAIS */
+
+/* NORMAL CAPTIONS */
 
 .work figcaption:not(.caption-left):not(.caption-right) {
     width: 100%;
 }
 
-/* DUAS LEGENDAS — IMAGEM 5 */
+
+/* TWO CAPTIONS — IMAGE 5 */
 
 .work .caption-left {
     left: 0;
@@ -202,6 +261,7 @@ nav .space {
 .work:hover figcaption {
     opacity: 1;
 }
+
 
 /* MEMORABÍLIA */
 
@@ -249,6 +309,7 @@ nav .space {
     break-inside: avoid;
 }
 
+
 /* VIDEO */
 
 .video {
@@ -261,6 +322,7 @@ video {
     width: 100%;
     display: block;
 }
+
 
 /* ABOUT */
 
@@ -281,11 +343,56 @@ video {
     margin-bottom: 20px;
 }
 
+
+/* CATALOGUE FORM */
+
+.catalog-form {
+    max-width: 600px;
+    margin-top: 60px;
+}
+
+.catalog-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.catalog-form input,
+.catalog-form textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #111;
+    padding: 8px 0;
+    margin-bottom: 30px;
+    font-family: inherit;
+    font-size: 18px;
+    background: transparent;
+}
+
+.catalog-form textarea {
+    resize: vertical;
+}
+
+.catalog-form button {
+    border: none;
+    background: none;
+    padding: 0;
+    font-family: inherit;
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.catalog-form button:hover {
+    opacity: .45;
+}
+
+
 /* FOOTER */
 
 footer {
     padding: 100px 25px 40px;
 }
+
 
 /* MOBILE */
 
@@ -339,6 +446,33 @@ footer {
         text-align: left;
     }
 
+
+    /* EXHIBITION INFORMATION ON MOBILE */
+
+    .exhibition-info {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-top: 100px;
+        margin-bottom: 60px;
+    }
+
+    .exhibition-description {
+        max-width: none;
+    }
+
+    .exhibition-press {
+        font-size: 16px;
+    }
+
+
+    /* EXHIBITION LINKS ON MOBILE */
+
+    .project-links {
+        gap: 15px 25px;
+        margin-bottom: 100px;
+    }
+
+
     /* ISOLATED WORKS ON MOBILE */
 
     .image-large {
@@ -356,6 +490,7 @@ footer {
         margin-bottom: 50px;
     }
 
+
     /* TWO IMAGES ON MOBILE */
 
     .two-images {
@@ -363,6 +498,7 @@ footer {
         gap: 40px;
         margin-bottom: 50px;
     }
+
 
     /* CAPTIONS ON MOBILE */
 
@@ -376,9 +512,15 @@ footer {
         white-space: normal !important;
     }
 
+
+    /* ABOUT */
+
     .about {
         margin: 0;
     }
+
+
+    /* MEMORABÍLIA */
 
     .memorabilia-pair {
         width: 100%;
@@ -396,80 +538,5 @@ footer {
     .memorabilia-mosaic img {
         margin-bottom: 8px;
     }
-}
 
-/* CATALOG FORM */
-
-.catalog-form {
-    max-width: 600px;
-    margin-top: 60px;
-}
-
-.catalog-form label {
-    display: block;
-    margin-bottom: 8px;
-}
-
-.catalog-form input,
-.catalog-form textarea {
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #111;
-    padding: 8px 0;
-    margin-bottom: 30px;
-    font-family: inherit;
-    font-size: 18px;
-    background: transparent;
-}
-
-.catalog-form textarea {
-    resize: vertical;
-}
-
-.catalog-form button {
-    border: none;
-    background: none;
-    padding: 0;
-    font-family: inherit;
-    font-size: 18px;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.catalog-form button:hover {
-    opacity: .45;
-}
-/* EXHIBITION LINKS */
-
-.project-links {
-    margin-top: -35px;
-    margin-bottom: 150px;
-
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0;
-    align-items: baseline;
-
-    font-size: 16px;
-}
-
-.project-links a,
-.project-links a:visited {
-    color: #111;
-    text-decoration: none;
-}
-
-.project-links a:hover {
-    opacity: .45;
-}
-
-.project-links a:not(:last-child)::after,
-.project-links .press-link::after {
-    content: " · ";
-    padding: 0 8px;
-    opacity: .6;
-}
-
-.project-links .press-link {
-    color: #111;
 }
