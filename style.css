@@ -614,19 +614,23 @@ footer {
     border: 0;
 }
 
+/* NOS BONS LUGARES — imagem 7 + texto */
+
 #nosbonslugareshasemprevento .nos-bons-lugares-info {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start;
     width: 100%;
     max-width: 1200px;
     margin: 100px auto 0;
-    display: flex;
-    align-items: flex-start;
     gap: 80px;
 }
 
 #nosbonslugareshasemprevento .nos-bons-lugares-view {
-    width: 30%;
+    display: block;
+    width: 30% !important;
+    flex: 0 0 30% !important;
     margin: 0;
-    flex-shrink: 0;
     position: relative;
 }
 
@@ -657,13 +661,11 @@ footer {
 }
 
 #nosbonslugareshasemprevento .nos-bons-lugares-text {
-    flex: 1;
+    display: block;
+    flex: 1 1 0;
+    width: auto !important;
     max-width: 600px;
     margin: 0;
-}
-
-#nosbonslugareshasemprevento .nos-bons-lugares-text p {
-    margin: 0 0 25px;
 }
 
 /* MOBILE */
@@ -908,18 +910,18 @@ footer {
 }
     }
 #nosbonslugareshasemprevento .nos-bons-lugares-info {
-    display: block;
+    display: block !important;
     width: 100%;
     margin-top: 60px;
 }
 
 #nosbonslugareshasemprevento .nos-bons-lugares-view {
-    width: 65%;
+    width: 65% !important;
     margin: 0 auto 50px;
 }
 
 #nosbonslugareshasemprevento .nos-bons-lugares-text {
-    width: 100%;
-    margin: 0;
+    width: 100% !important;
+    max-width: none;
 }
 }
