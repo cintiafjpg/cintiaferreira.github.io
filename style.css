@@ -18,7 +18,9 @@ body {
 }
 
 
-/* MENU */
+/* =========================================================
+   MENU
+   ========================================================= */
 
 header {
     position: fixed;
@@ -64,7 +66,9 @@ nav .space {
 }
 
 
-/* HOME */
+/* =========================================================
+   HOME
+   ========================================================= */
 
 .home {
     height: 100vh;
@@ -72,7 +76,9 @@ nav .space {
 }
 
 
-/* PAGES */
+/* =========================================================
+   PAGES
+   ========================================================= */
 
 .page {
     padding: 150px 25px 100px;
@@ -80,14 +86,36 @@ nav .space {
     margin: auto;
 }
 
+
+/* =========================================================
+   PROJECT TITLES
+   ========================================================= */
+
 .project-title {
     text-align: center;
-    font-size: clamp(30px, 4vw, 60px);
     margin-bottom: 90px;
 }
 
+.project-title-main {
+    font-size: clamp(30px, 4vw, 60px);
+    line-height: 1;
+    font-style: italic;
+    font-weight: 400;
+}
 
-/* PROJECT INFORMATION */
+.project-title-translation {
+    margin-top: 8px;
+    color: #888;
+    font-size: clamp(16px, 1.5vw, 22px);
+    line-height: 1.1;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   PROJECT INFORMATION
+   ========================================================= */
 
 .project-info {
     display: grid;
@@ -110,7 +138,9 @@ nav .space {
 }
 
 
-/* EXHIBITION INFORMATION */
+/* =========================================================
+   EXHIBITION INFORMATION
+   ========================================================= */
 
 .exhibition-info {
     display: grid;
@@ -133,16 +163,16 @@ nav .space {
 }
 
 
-/* EXHIBITION LINKS */
+/* =========================================================
+   EXHIBITION LINKS
+   ========================================================= */
 
 .project-links {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
     align-items: baseline;
-
     margin-bottom: 150px;
-
     font-size: 16px;
 }
 
@@ -157,7 +187,9 @@ nav .space {
 }
 
 
-/* IMAGES */
+/* =========================================================
+   IMAGES
+   ========================================================= */
 
 .image-large {
     width: 70%;
@@ -178,7 +210,9 @@ nav .space {
 }
 
 
-/* ISOLATED WORKS */
+/* =========================================================
+   ISOLATED WORKS
+   ========================================================= */
 
 .work.image-large img {
     width: 100%;
@@ -188,7 +222,9 @@ nav .space {
 }
 
 
-/* TWO IMAGES */
+/* =========================================================
+   TWO IMAGES
+   ========================================================= */
 
 .two-images {
     display: grid;
@@ -209,7 +245,9 @@ nav .space {
 }
 
 
-/* HOVER CAPTIONS */
+/* =========================================================
+   HOVER CAPTIONS
+   ========================================================= */
 
 .work {
     position: relative;
@@ -242,7 +280,7 @@ nav .space {
 }
 
 
-/* TWO CAPTIONS — IMAGE 5 */
+/* TWO CAPTIONS */
 
 .work .caption-left {
     left: 0;
@@ -264,8 +302,11 @@ nav .space {
 
 
 /* =========================================================
-   MEMORABÍLIA — MOSAICO
+   MEMORABÍLIA
    ========================================================= */
+
+
+/* MOSAICO */
 
 .memorabilia-mosaic {
     width: 100%;
@@ -285,7 +326,7 @@ nav .space {
 }
 
 
-/* IMAGENS */
+/* IMAGENS DO MOSAICO */
 
 .mosaic-item {
     margin: 0;
@@ -300,8 +341,11 @@ nav .space {
 
 
 /* =========================================================
-   CIANOTIPIAS
+   POSIÇÕES DO MOSAICO
    ========================================================= */
+
+
+/* CIANOTIPIAS */
 
 .mosaic-7 {
     grid-column: 1 / span 3;
@@ -319,9 +363,7 @@ nav .space {
 }
 
 
-/* =========================================================
-   FOTOGRAFIA 0
-   ========================================================= */
+/* FOTOGRAFIA 0 */
 
 .mosaic-0 {
     grid-column: 9 / span 4;
@@ -329,9 +371,7 @@ nav .space {
 }
 
 
-/* =========================================================
-   CONTINUAÇÃO
-   ========================================================= */
+/* CONTINUAÇÃO */
 
 .mosaic-10 {
     grid-column: 1 / span 3;
@@ -344,9 +384,7 @@ nav .space {
 }
 
 
-/* =========================================================
-   PRETO E BRANCO 1
-   ========================================================= */
+/* PRETO E BRANCO 1 */
 
 .mosaic-bw-1 {
     grid-column: 8 / span 5;
@@ -354,9 +392,7 @@ nav .space {
 }
 
 
-/* =========================================================
-   CONTINUAÇÃO
-   ========================================================= */
+/* CONTINUAÇÃO */
 
 .mosaic-12 {
     grid-column: 1 / span 2;
@@ -374,9 +410,7 @@ nav .space {
 }
 
 
-/* =========================================================
-   PRETO E BRANCO 2
-   ========================================================= */
+/* PRETO E BRANCO 2 */
 
 .mosaic-bw-2 {
     grid-column: 8 / span 5;
@@ -384,9 +418,7 @@ nav .space {
 }
 
 
-/* =========================================================
-   FINAL DO MOSAICO
-   ========================================================= */
+/* FINAL */
 
 .mosaic-15 {
     grid-column: 1 / span 3;
@@ -414,41 +446,7 @@ nav .space {
 }
 
 
-/* =========================================================
-   LEGENDAS
-   ========================================================= */
-
-.memorabilia-mosaic .work {
-    position: relative;
-}
-
-.memorabilia-mosaic .work figcaption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    width: 100%;
-
-    padding: 12px 16px;
-
-    background: rgba(255, 255, 255, 0.88);
-    color: #111;
-
-    font-size: 16px;
-    line-height: 1.2;
-
-    opacity: 0;
-    transition: opacity 0.25s ease;
-
-    pointer-events: none;
-}
-
-.memorabilia-mosaic .work:hover figcaption {
-    opacity: 1;
-}
-/* =========================================================
-   TEXTO
-   ========================================================= */
+/* TEXTO DA MEMORABÍLIA */
 
 .memorabilia-text {
     max-width: 700px;
@@ -459,7 +457,10 @@ nav .space {
     margin: 0 0 25px;
 }
 
-/* VIDEO */
+
+/* =========================================================
+   VIDEO
+   ========================================================= */
 
 .video {
     width: 100%;
@@ -473,7 +474,9 @@ video {
 }
 
 
-/* ABOUT */
+/* =========================================================
+   ABOUT
+   ========================================================= */
 
 .about {
     max-width: 900px;
@@ -493,7 +496,9 @@ video {
 }
 
 
-/* CATALOGUE FORM */
+/* =========================================================
+   CATALOGUE FORM
+   ========================================================= */
 
 .catalog-form {
     max-width: 600px;
@@ -536,23 +541,20 @@ video {
 }
 
 
-/* FOOTER */
+/* =========================================================
+   FOOTER
+   ========================================================= */
 
 footer {
     padding: 100px 25px 40px;
 }
 
 
-/* MOBILE */
+/* =========================================================
+   MOBILE
+   ========================================================= */
 
 @media (max-width: 700px) {
-
-    .project-title {
-        text-align: left;
-        margin-bottom: 60px;
-    }
-
-}
 
     body {
         font-size: 17px;
@@ -586,10 +588,25 @@ footer {
         padding: 300px 15px 60px;
     }
 
+
+    /* PROJECT TITLE */
+
     .project-title {
         text-align: left;
         margin-bottom: 60px;
     }
+
+    .project-title-main {
+        font-size: 38px;
+    }
+
+    .project-title-translation {
+        font-size: 17px;
+        margin-top: 7px;
+    }
+
+
+    /* PROJECT INFO */
 
     .project-info {
         grid-template-columns: 1fr;
@@ -603,7 +620,7 @@ footer {
     }
 
 
-    /* EXHIBITION INFORMATION ON MOBILE */
+    /* EXHIBITION INFO */
 
     .exhibition-info {
         grid-template-columns: 1fr;
@@ -621,7 +638,7 @@ footer {
     }
 
 
-    /* EXHIBITION LINKS ON MOBILE */
+    /* PROJECT LINKS */
 
     .project-links {
         gap: 15px 25px;
@@ -629,7 +646,7 @@ footer {
     }
 
 
-    /* ISOLATED WORKS ON MOBILE */
+    /* ISOLATED WORKS */
 
     .image-large {
         width: 100%;
@@ -647,7 +664,7 @@ footer {
     }
 
 
-    /* TWO IMAGES ON MOBILE */
+    /* TWO IMAGES */
 
     .two-images {
         grid-template-columns: 1fr;
@@ -656,7 +673,7 @@ footer {
     }
 
 
-    /* CAPTIONS ON MOBILE */
+    /* CAPTIONS */
 
     .work figcaption {
         position: static;
@@ -669,14 +686,9 @@ footer {
     }
 
 
-    /* ABOUT */
-
-    .about {
-        margin: 0;
-    }
-
-
-@media (max-width: 700px) {
+    /* =====================================================
+       MEMORABÍLIA — MOBILE
+       ===================================================== */
 
     .memorabilia-mosaic {
         width: 100%;
@@ -692,7 +704,8 @@ footer {
         grid-row: auto !important;
     }
 
-    /* Algumas imagens continuam maiores */
+
+    /* imagens maiores */
 
     .mosaic-0,
     .mosaic-bw-1,
@@ -702,35 +715,25 @@ footer {
         grid-column: span 2 !important;
     }
 
-    .memorabilia-mosaic .work figcaption {
-        position: static;
-        opacity: 1;
+
+    /* TEXTO */
+
+    .memorabilia-text {
         width: 100%;
-        background: none;
-        padding: 8px 0 0;
-        font-size: 15px;
     }
 
-}
 
-}
-.project-title {
-    text-align: center;
-    margin-bottom: 90px;
-}
+    /* ABOUT */
 
-.project-title-main {
-    font-size: clamp(30px, 4vw, 60px);
-    line-height: 1;
-    font-style: italic;
-    font-weight: 400;
-}
+    .about {
+        margin: 0;
+    }
 
-.project-title-translation {
-    margin-top: 8px;
-    color: #888;
-    font-size: clamp(16px, 1.5vw, 22px);
-    line-height: 1.1;
-    font-style: normal;
-    font-weight: 400;
+
+    /* FOOTER */
+
+    footer {
+        padding: 70px 15px 30px;
+    }
+
 }
