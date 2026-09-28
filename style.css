@@ -572,6 +572,13 @@ footer {
 
 @media (max-width: 700px) {
 
+    .project-title {
+        text-align: left;
+        margin-bottom: 60px;
+    }
+
+}
+
     body {
         font-size: 17px;
     }
@@ -807,4 +814,24 @@ footer {
         width: 100%;
     }
 
+}
+.project-title {
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.project-title-main {
+    font-size: clamp(30px, 4vw, 60px);
+    line-height: 1;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.project-title-translation {
+    margin-top: 8px;
+    color: #888;
+    font-size: clamp(16px, 1.5vw, 22px);
+    line-height: 1.1;
+    font-style: normal;
+    font-weight: 400;
 }
