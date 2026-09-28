@@ -614,15 +614,42 @@ footer {
     border: 0;
 }
 
+#nosbonslugareshasemprevento .nos-bons-lugares-info {
+    width: 100%;
+    max-width: 1200px;
+    margin: 100px auto 0;
 
-/* TEXTO */
-
-.nos-bons-lugares-text {
-    max-width: 700px;
-    margin: 80px auto 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
 }
 
-.nos-bons-lugares-text p {
+#nosbonslugareshasemprevento .nos-bons-lugares-view {
+    width: 42%;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+#nosbonslugareshasemprevento .nos-bons-lugares-view img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#nosbonslugareshasemprevento .nos-bons-lugares-view figcaption {
+    margin-top: 10px;
+    color: #999;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+#nosbonslugareshasemprevento .nos-bons-lugares-text {
+    width: auto;
+    max-width: 600px;
+    margin: 0;
+}
+
+#nosbonslugareshasemprevento .nos-bons-lugares-text p {
     margin: 0 0 25px;
 }
 
@@ -867,5 +894,19 @@ footer {
 
 }
     }
+#nosbonslugareshasemprevento .nos-bons-lugares-info {
+    display: block;
+    width: 100%;
+    margin-top: 60px;
+}
 
+#nosbonslugareshasemprevento .nos-bons-lugares-view {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#nosbonslugareshasemprevento .nos-bons-lugares-text {
+    width: 100%;
+    margin: 0;
+}
 }
