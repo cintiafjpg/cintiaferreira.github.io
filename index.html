@@ -428,48 +428,101 @@
 
 <section id="deja-vu" class="page">
 
-    <div class="project-title">
-        DÉJÀ VU
+    <div class="project-title project-title-film">
+        <em>DÉJÀ VU</em>
     </div>
 
-    <img src="images/deja vu/1.jpg"
-         class="image-large"
-         alt="Déjà vu">
 
-    <div class="two-images">
+    <!-- CARTAZ -->
 
-        <img src="images/deja vu/2.jpg"
-             alt="Déjà vu">
-
-        <img src="images/deja vu/3.jpg"
-             alt="Déjà vu">
-
-    </div>
-
-    <img src="images/deja vu/4.jpg"
-         class="image-large"
-         alt="Déjà vu">
+    <figure class="film-poster">
+        <img src="images/deja vu/1.jpg"
+             alt="déjà vu - poster">
+    </figure>
 
 
-    <div class="project-info">
+    <!-- STILLS — CAROUSEL -->
 
-        <div class="press">
+    <div class="film-carousel">
 
-            <p>
-                <strong>Déjà vu</strong><br>
-                Short film / essay film<br>
-                2025–2026
-            </p>
+        <button class="carousel-prev" type="button" aria-label="Previous still">
+            ‹
+        </button>
 
-            <p>
-                Câmpulung Film Fest<br>
-                Romania
-            </p>
+        <div class="carousel-slides">
 
+            <figure class="carousel-slide active">
+                <img src="images/deja vu/2.jpg"
+                     alt="Déjà vu — still 1">
+                <figcaption>
+                    <em>Déjà vu</em>, 2026 — still
+                </figcaption>
+            </figure>
+
+            <figure class="carousel-slide">
+                <img src="images/deja vu/7.jpg"
+                     alt="Déjà vu — still 2">
+                <figcaption>
+                    <em>Déjà vu</em>, 2026 — still
+                </figcaption>
+            </figure>
+
+            <figure class="carousel-slide">
+                <img src="images/deja vu/3.jpg"
+                     alt="Déjà vu — still 3">
+                <figcaption>
+                    <em>Déjà vu</em>, 2026 — still
+                </figcaption>
+            </figure>
+
+            <figure class="carousel-slide">
+                <img src="images/deja vu/6.jpg"
+                     alt="Déjà vu — still 4">
+                <figcaption>
+                    <em>Déjà vu</em>, 2026 — still
+                </figcaption>
+            </figure>
+
+             <figure class="carousel-slide">
+                <img src="images/deja vu/5.jpg"
+                     alt="Déjà vu — still 4">
+                <figcaption>
+                    <em>Déjà vu</em>, 2026 — still
+                </figcaption>
+            </figure>
+
+              <figure class="carousel-slide">
+                <img src="images/deja vu/8.jpg"
+                     alt="Déjà vu — still 4">
+                <figcaption>
+                    <em>Déjà vu</em>, 2026 — still
+                </figcaption>
+            </figure>
+
+              <figure class="carousel-slide">
+                <img src="images/deja vu/4.jpg"
+                     alt="Déjà vu — still 4">
+                <figcaption>
+                    <em>Déjà vu</em>, 2026 — still
+                </figcaption>
+            </figure>
+        
         </div>
 
+        <button class="carousel-next" type="button" aria-label="Next still">
+            ›
+        </button>
 
-        <div>
+    </div>
+
+
+    <!-- SINOPSE + FICHA TÉCNICA -->
+
+    <div class="film-info">
+
+        <div class="film-synopsis">
+
+            <h3>Synopsis</h3>
 
             <p>
                 A young woman searches for traces of herself
@@ -478,7 +531,7 @@
             </p>
 
             <p>
-                Driven by déjà vu, she returns to a place she
+                Driven by <em>déjà vu</em>, she returns to a place she
                 grew up in, repeating gestures of observation,
                 collection and revelation.
             </p>
@@ -490,6 +543,111 @@
             </p>
 
         </div>
+
+
+        <div class="film-credits">
+
+            <h3>Credits</h3>
+
+            <p>
+                <strong>Title</strong> déjà vu<br>
+                <strong>Year</strong> 2026<br>
+                <strong>Duration</strong> [10'44'']<br>
+                <strong>In association with KINO-DOC</strong>
+        
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- SCREENING -->
+
+    <div class="film-screening">
+
+        <p>
+            <strong>Screenings</strong><br>
+            <a href="LINK-CAMPULUNG-FILM-FEST"
+               target="_blank"
+               rel="noopener">
+                Câmpulung Film Fest
+            </a>,
+            Romania, 2026.
+        </p>
+
+    </div>
+
+
+    <!-- LINKS -->
+
+    <div class="film-links">
+
+        <p>
+            <a href="LINK-PRESS-KIT"
+               target="_blank"
+               rel="noopener">
+                Press kit
+            </a>
+        </p>
+
+        <p>
+            <a href="LINK-IMDB"
+               target="_blank"
+               rel="noopener">
+                IMDb
+            </a>
+        </p>
+
+        <p>
+            <a href="https://letterboxd.com/film/deja-vu-2026-1/"
+               target="_blank"
+               rel="noopener">
+                Letterboxd
+            </a>
+        </p>
+
+    </div>
+
+
+    <!-- REQUEST THE FILM -->
+
+    <div class="film-request">
+
+        <h3>Request the film</h3>
+
+        <p>
+            For screening, festival, curatorial or research purposes,
+            please get in touch to request access to the film.
+        </p>
+
+        <form>
+
+            <label>
+                Name
+                <input type="text" name="name" required>
+            </label>
+
+            <label>
+                Email
+                <input type="email" name="email" required>
+            </label>
+
+            <label>
+                Institution / Festival / Organisation
+                <input type="text" name="organisation">
+            </label>
+
+            <label>
+                Reason for request
+                <textarea name="message" rows="5" required></textarea>
+            </label>
+
+            <button type="submit">
+                Request the film
+            </button>
+
+        </form>
 
     </div>
 
