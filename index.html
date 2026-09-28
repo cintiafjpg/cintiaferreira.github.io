@@ -612,44 +612,46 @@
 
     <!-- REQUEST THE FILM -->
 
-    <div class="film-request">
+<!-- REQUEST THE FILM -->
 
-        <h3>Request the film</h3>
+<div class="film-request">
 
-        <p>
-            For screening, festival, curatorial or research purposes,
-            please get in touch to request access to the film.
-        </p>
+    <h3>Request the film</h3>
 
-        <form>
+    <p>
+        For screening, festival, curatorial or research purposes,
+        please get in touch to request access to the film.
+    </p>
 
-            <label>
-                Name
-                <input type="text" name="name" required>
-            </label>
+    <form action="https://formspree.io/f/mwlpalaz" method="POST">
 
-            <label>
-                Email
-                <input type="email" name="email" required>
-            </label>
+        <label>
+            Name
+            <input type="text" name="name" required>
+        </label>
 
-            <label>
-                Institution / Festival / Organisation
-                <input type="text" name="organisation">
-            </label>
+        <label>
+            Email
+            <input type="email" name="email" required>
+        </label>
 
-            <label>
-                Reason for request
-                <textarea name="message" rows="5" required></textarea>
-            </label>
+        <label>
+            Institution / Festival / Organisation
+            <input type="text" name="organisation">
+        </label>
 
-            <button type="submit">
-                Request the film
-            </button>
+        <label>
+            Reason for request
+            <textarea name="message" rows="5" required></textarea>
+        </label>
 
-        </form>
+        <button type="submit">
+            Request the film
+        </button>
 
-    </div>
+    </form>
+
+</div>
 
 </section>
 
