@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
 
+
 * {
     box-sizing: border-box;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
+
 
 body {
     margin: 0;
@@ -19,7 +22,7 @@ body {
 
 
 /* =========================================================
-   MENU
+   HEADER
    ========================================================= */
 
 header {
@@ -32,6 +35,7 @@ header {
     pointer-events: none;
 }
 
+
 .site-title {
     position: absolute;
     left: 25px;
@@ -42,6 +46,7 @@ header {
     pointer-events: auto;
 }
 
+
 nav {
     position: absolute;
     right: 25px;
@@ -50,6 +55,7 @@ nav {
     pointer-events: auto;
 }
 
+
 nav a {
     display: block;
     color: #111;
@@ -57,9 +63,11 @@ nav a {
     transition: opacity .2s ease;
 }
 
+
 nav a:hover {
     opacity: .45;
 }
+
 
 nav .space {
     height: 18px;
@@ -77,7 +85,7 @@ nav .space {
 
 
 /* =========================================================
-   PAGES
+   PAGE
    ========================================================= */
 
 .page {
@@ -88,7 +96,7 @@ nav .space {
 
 
 /* =========================================================
-   PROJECT TITLES
+   PROJECT TITLE
    ========================================================= */
 
 .project-title {
@@ -96,12 +104,14 @@ nav .space {
     margin-bottom: 90px;
 }
 
+
 .project-title-main {
     font-size: clamp(30px, 4vw, 60px);
     line-height: 1;
     font-style: italic;
     font-weight: 400;
 }
+
 
 .project-title-translation {
     margin-top: 8px;
@@ -114,7 +124,7 @@ nav .space {
 
 
 /* =========================================================
-   PROJECT INFORMATION
+   PROJECT INFO
    ========================================================= */
 
 .project-info {
@@ -125,13 +135,16 @@ nav .space {
     margin-bottom: 150px;
 }
 
+
 .project-info .press {
     text-align: right;
 }
 
+
 .project-info p {
     margin: 0 0 20px;
 }
+
 
 .project-info a {
     color: inherit;
@@ -139,7 +152,7 @@ nav .space {
 
 
 /* =========================================================
-   EXHIBITION INFORMATION
+   EXHIBITION INFO
    ========================================================= */
 
 .exhibition-info {
@@ -150,13 +163,16 @@ nav .space {
     margin-bottom: 70px;
 }
 
+
 .exhibition-info p {
     margin: 0 0 20px;
 }
 
+
 .exhibition-press {
     font-size: 16px;
 }
+
 
 .exhibition-description {
     max-width: 700px;
@@ -164,7 +180,7 @@ nav .space {
 
 
 /* =========================================================
-   EXHIBITION LINKS
+   PROJECT LINKS
    ========================================================= */
 
 .project-links {
@@ -176,11 +192,13 @@ nav .space {
     font-size: 16px;
 }
 
+
 .project-links a,
 .project-links a:visited {
     color: #111;
     text-decoration: none;
 }
+
 
 .project-links a:hover {
     opacity: .45;
@@ -188,7 +206,7 @@ nav .space {
 
 
 /* =========================================================
-   IMAGES
+   IMAGES — ORIGINAL
    ========================================================= */
 
 .image-large {
@@ -197,11 +215,13 @@ nav .space {
     margin: 0 auto 100px;
 }
 
+
 .image-medium {
     width: 70%;
     display: block;
     margin: 0 auto 100px;
 }
+
 
 .image-small {
     width: 45%;
@@ -211,7 +231,7 @@ nav .space {
 
 
 /* =========================================================
-   ISOLATED WORKS
+   ISOLATED WORKS — ORIGINAL
    ========================================================= */
 
 .work.image-large img {
@@ -223,7 +243,7 @@ nav .space {
 
 
 /* =========================================================
-   TWO IMAGES
+   TWO IMAGES — ORIGINAL
    ========================================================= */
 
 .two-images {
@@ -233,10 +253,12 @@ nav .space {
     margin-bottom: 100px;
 }
 
+
 .two-images .work {
     position: relative;
     margin: 0;
 }
+
 
 .two-images img {
     width: 100%;
@@ -246,12 +268,13 @@ nav .space {
 
 
 /* =========================================================
-   HOVER CAPTIONS
+   CAPTIONS — ORIGINAL
    ========================================================= */
 
 .work {
     position: relative;
 }
+
 
 .work figcaption {
     position: absolute;
@@ -273,14 +296,10 @@ nav .space {
 }
 
 
-/* NORMAL CAPTIONS */
-
 .work figcaption:not(.caption-left):not(.caption-right) {
     width: 100%;
 }
 
-
-/* TWO CAPTIONS */
 
 .work .caption-left {
     left: 0;
@@ -289,12 +308,14 @@ nav .space {
     white-space: nowrap;
 }
 
+
 .work .caption-right {
     left: auto;
     right: 0;
     width: auto;
     white-space: nowrap;
 }
+
 
 .work:hover figcaption {
     opacity: 1;
@@ -305,12 +326,28 @@ nav .space {
    MEMORABÍLIA
    ========================================================= */
 
+#memorabilia h1 {
+    text-align: center;
+    font-size: clamp(30px, 4vw, 60px);
+    font-weight: 400;
+    margin: 0 0 50px;
+}
 
-/* MOSAICO */
+
+#memorabilia > p {
+    max-width: 650px;
+    margin: 0 auto 120px;
+}
+
+
+/* =========================================================
+   MEMORABÍLIA — MOSAICO
+   ========================================================= */
 
 .memorabilia-mosaic {
     width: 100%;
     max-width: 1250px;
+
     margin: 0 auto 170px;
 
     display: grid;
@@ -326,36 +363,34 @@ nav .space {
 }
 
 
-/* IMAGENS DO MOSAICO */
-
-.mosaic-item {
+.memorabilia-mosaic .mosaic-item {
     margin: 0;
     padding: 0;
 }
 
-.mosaic-item img {
+
+.memorabilia-mosaic .mosaic-item img {
     width: 100%;
     height: auto;
     display: block;
 }
 
 
-/* =========================================================
-   POSIÇÕES DO MOSAICO
-   ========================================================= */
-
-
-/* CIANOTIPIAS */
+/* ---------------------------------------------------------
+   POSIÇÕES
+   --------------------------------------------------------- */
 
 .mosaic-7 {
     grid-column: 1 / span 3;
     grid-row: 1 / span 5;
 }
 
+
 .mosaic-8 {
     grid-column: 4 / span 3;
     grid-row: 1 / span 4;
 }
+
 
 .mosaic-9 {
     grid-column: 7 / span 2;
@@ -363,20 +398,17 @@ nav .space {
 }
 
 
-/* FOTOGRAFIA 0 */
-
 .mosaic-0 {
     grid-column: 9 / span 4;
     grid-row: 1 / span 6;
 }
 
 
-/* CONTINUAÇÃO */
-
 .mosaic-10 {
     grid-column: 1 / span 3;
     grid-row: 6 / span 5;
 }
+
 
 .mosaic-11 {
     grid-column: 4 / span 4;
@@ -384,25 +416,23 @@ nav .space {
 }
 
 
-/* PRETO E BRANCO 1 */
-
 .mosaic-bw-1 {
     grid-column: 8 / span 5;
     grid-row: 7 / span 6;
 }
 
 
-/* CONTINUAÇÃO */
-
 .mosaic-12 {
     grid-column: 1 / span 2;
     grid-row: 11 / span 4;
 }
 
+
 .mosaic-13 {
     grid-column: 3 / span 3;
     grid-row: 10 / span 5;
 }
+
 
 .mosaic-14 {
     grid-column: 6 / span 2;
@@ -410,35 +440,35 @@ nav .space {
 }
 
 
-/* PRETO E BRANCO 2 */
-
 .mosaic-bw-2 {
     grid-column: 8 / span 5;
     grid-row: 13 / span 6;
 }
 
 
-/* FINAL */
-
 .mosaic-15 {
     grid-column: 1 / span 3;
     grid-row: 15 / span 5;
 }
+
 
 .mosaic-3 {
     grid-column: 4 / span 3;
     grid-row: 15 / span 4;
 }
 
+
 .mosaic-17 {
     grid-column: 7 / span 4;
     grid-row: 19 / span 5;
 }
 
+
 .mosaic-18 {
     grid-column: 1 / span 3;
     grid-row: 20 / span 4;
 }
+
 
 .mosaic-19 {
     grid-column: 10 / span 3;
@@ -446,15 +476,18 @@ nav .space {
 }
 
 
-/* TEXTO DA MEMORABÍLIA */
+/* =========================================================
+   MEMORABÍLIA — TEXTO
+   ========================================================= */
 
 .memorabilia-text {
-    max-width: 700px;
-    margin: 0 auto;
+    max-width: 650px;
+    margin: 0 auto 120px;
 }
 
+
 .memorabilia-text p {
-    margin: 0 0 25px;
+    margin: 0 0 20px;
 }
 
 
@@ -467,6 +500,7 @@ nav .space {
     display: block;
     margin-bottom: 100px;
 }
+
 
 video {
     width: 100%;
@@ -484,9 +518,11 @@ video {
     margin-right: 15%;
 }
 
+
 .about p {
     margin-bottom: 30px;
 }
+
 
 .about h2 {
     font-size: 22px;
@@ -505,10 +541,12 @@ video {
     margin-top: 60px;
 }
 
+
 .catalog-form label {
     display: block;
     margin-bottom: 8px;
 }
+
 
 .catalog-form input,
 .catalog-form textarea {
@@ -522,9 +560,11 @@ video {
     background: transparent;
 }
 
+
 .catalog-form textarea {
     resize: vertical;
 }
+
 
 .catalog-form button {
     border: none;
@@ -535,6 +575,7 @@ video {
     text-decoration: underline;
     cursor: pointer;
 }
+
 
 .catalog-form button:hover {
     opacity: .45;
@@ -551,7 +592,7 @@ footer {
 
 
 /* =========================================================
-   MOBILE
+   MOBILE — ORIGINAL
    ========================================================= */
 
 @media (max-width: 700px) {
@@ -560,9 +601,11 @@ footer {
         font-size: 17px;
     }
 
+
     header {
         position: absolute;
     }
+
 
     .site-title {
         position: relative;
@@ -570,6 +613,7 @@ footer {
         top: 0;
         font-size: 38px;
     }
+
 
     nav {
         position: relative;
@@ -579,34 +623,23 @@ footer {
         text-align: left;
     }
 
+
     .home {
         height: auto;
         min-height: 100vh;
     }
+
 
     .page {
         padding: 300px 15px 60px;
     }
 
 
-    /* PROJECT TITLE */
-
     .project-title {
         text-align: left;
         margin-bottom: 60px;
     }
 
-    .project-title-main {
-        font-size: 38px;
-    }
-
-    .project-title-translation {
-        font-size: 17px;
-        margin-top: 7px;
-    }
-
-
-    /* PROJECT INFO */
 
     .project-info {
         grid-template-columns: 1fr;
@@ -615,12 +648,11 @@ footer {
         margin-bottom: 100px;
     }
 
+
     .project-info .press {
         text-align: left;
     }
 
-
-    /* EXHIBITION INFO */
 
     .exhibition-info {
         grid-template-columns: 1fr;
@@ -629,16 +661,16 @@ footer {
         margin-bottom: 60px;
     }
 
+
     .exhibition-description {
         max-width: none;
     }
+
 
     .exhibition-press {
         font-size: 16px;
     }
 
-
-    /* PROJECT LINKS */
 
     .project-links {
         gap: 15px 25px;
@@ -646,16 +678,16 @@ footer {
     }
 
 
-    /* ISOLATED WORKS */
-
     .image-large {
         width: 100%;
         margin-bottom: 50px;
     }
 
+
     .work.image-large img {
         width: 100%;
     }
+
 
     .image-medium,
     .image-small {
@@ -664,16 +696,12 @@ footer {
     }
 
 
-    /* TWO IMAGES */
-
     .two-images {
         grid-template-columns: 1fr;
         gap: 40px;
         margin-bottom: 50px;
     }
 
-
-    /* CAPTIONS */
 
     .work figcaption {
         position: static;
@@ -683,6 +711,11 @@ footer {
         padding: 8px 0 0;
         font-size: 15px;
         white-space: normal !important;
+    }
+
+
+    .about {
+        margin: 0;
     }
 
 
@@ -696,44 +729,27 @@ footer {
         grid-auto-rows: auto;
         column-gap: 8px;
         row-gap: 8px;
-        margin-bottom: 100px;
+        margin-bottom: 80px;
     }
 
-    .mosaic-item {
+
+    .memorabilia-mosaic .mosaic-item {
         grid-column: auto !important;
         grid-row: auto !important;
     }
 
 
-    /* imagens maiores */
-
-    .mosaic-0,
-    .mosaic-bw-1,
-    .mosaic-bw-2,
-    .mosaic-17,
-    .mosaic-19 {
+    .memorabilia-mosaic .mosaic-0,
+    .memorabilia-mosaic .mosaic-bw-1,
+    .memorabilia-mosaic .mosaic-bw-2 {
         grid-column: span 2 !important;
     }
 
 
-    /* TEXTO */
-
     .memorabilia-text {
         width: 100%;
+        margin-bottom: 70px;
     }
 
-
-    /* ABOUT */
-
-    .about {
-        margin: 0;
-    }
-
-
-    /* FOOTER */
-
-    footer {
-        padding: 70px 15px 30px;
-    }
 
 }
