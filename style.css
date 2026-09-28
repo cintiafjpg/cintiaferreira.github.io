@@ -264,63 +264,7 @@ nav .space {
 
 
 /* =========================================================
-   MEMORABÍLIA
-   ========================================================= */
-
-
-/* IMAGEM PRINCIPAL */
-
-.memorabilia-main {
-    width: 70%;
-    max-width: 1000px;
-    margin: 0 auto 120px;
-}
-
-.memorabilia-main img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.memorabilia-main figcaption {
-    position: static;
-    width: 100%;
-    opacity: 1;
-    background: none;
-    padding: 10px 0 0;
-    font-size: 16px;
-    line-height: 1.2;
-}
-
-
-/* PAR DE IMAGENS */
-
-.memorabilia-pair {
-    width: 80%;
-    max-width: 1050px;
-    margin: 0 auto 160px;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-
-    align-items: center;
-}
-
-.memorabilia-pair figure {
-    margin: 0;
-    width: 100%;
-}
-
-.memorabilia-pair img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-
-/* =========================================================
-   MOSAICO ASSIMÉTRICO
+   MEMORABÍLIA — MOSAICO
    ========================================================= */
 
 .memorabilia-mosaic {
@@ -330,16 +274,9 @@ nav .space {
 
     display: grid;
 
-    /*
-       12 colunas permitem criar diferentes
-       larguras sem perder a organização.
-    */
     grid-template-columns: repeat(12, 1fr);
 
-    /*
-       Cada linha tem uma altura base.
-    */
-    grid-auto-rows: 70px;
+    grid-auto-rows: 65px;
 
     column-gap: 18px;
     row-gap: 18px;
@@ -363,114 +300,152 @@ nav .space {
 
 
 /* =========================================================
-   POSIÇÃO DE CADA IMAGEM
+   CIANOTIPIAS
    ========================================================= */
 
-
-/* 7 — grande vertical */
-
 .mosaic-7 {
-    grid-column: 1 / span 4;
-    grid-row: 1 / span 6;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 5;
 }
 
-
-/* 8 — pequena */
-
 .mosaic-8 {
-    grid-column: 5 / span 3;
+    grid-column: 4 / span 3;
     grid-row: 1 / span 4;
 }
 
-
-/* 9 — pequena */
-
 .mosaic-9 {
-    grid-column: 8 / span 2;
+    grid-column: 7 / span 2;
     grid-row: 1 / span 3;
 }
 
 
-/* 10 — vertical */
+/* =========================================================
+   FOTOGRAFIA 0
+   ========================================================= */
 
-.mosaic-10 {
-    grid-column: 10 / span 3;
-    grid-row: 1 / span 5;
+.mosaic-0 {
+    grid-column: 9 / span 4;
+    grid-row: 1 / span 6;
 }
 
 
-/* 11 — grande horizontal */
+/* =========================================================
+   CONTINUAÇÃO
+   ========================================================= */
+
+.mosaic-10 {
+    grid-column: 1 / span 3;
+    grid-row: 6 / span 5;
+}
 
 .mosaic-11 {
-    grid-column: 5 / span 5;
+    grid-column: 4 / span 4;
     grid-row: 5 / span 5;
 }
 
 
-/* 12 — pequeno */
+/* =========================================================
+   PRETO E BRANCO 1
+   ========================================================= */
+
+.mosaic-bw-1 {
+    grid-column: 8 / span 5;
+    grid-row: 7 / span 6;
+}
+
+
+/* =========================================================
+   CONTINUAÇÃO
+   ========================================================= */
 
 .mosaic-12 {
-    grid-column: 10 / span 3;
-    grid-row: 6 / span 3;
+    grid-column: 1 / span 2;
+    grid-row: 11 / span 4;
 }
-
-
-/* 13 — vertical */
 
 .mosaic-13 {
-    grid-column: 1 / span 3;
-    grid-row: 7 / span 5;
+    grid-column: 3 / span 3;
+    grid-row: 10 / span 5;
 }
 
-
-/* 14 — horizontal */
-
 .mosaic-14 {
-    grid-column: 4 / span 4;
+    grid-column: 6 / span 2;
     grid-row: 10 / span 4;
 }
 
 
-/* 15 — vertical */
+/* =========================================================
+   PRETO E BRANCO 2
+   ========================================================= */
 
-.mosaic-15 {
-    grid-column: 8 / span 3;
-    grid-row: 10 / span 5;
-}
-
-
-/* 3 — pequeno */
-
-.mosaic-3 {
-    grid-column: 11 / span 2;
-    grid-row: 10 / span 3;
-}
-
-
-/* 17 — grande */
-
-.mosaic-17 {
-    grid-column: 1 / span 5;
-    grid-row: 14 / span 5;
-}
-
-
-/* 18 — médio */
-
-.mosaic-18 {
-    grid-column: 6 / span 3;
-    grid-row: 15 / span 4;
-}
-
-
-/* 19 — vertical */
-
-.mosaic-19 {
-    grid-column: 9 / span 4;
+.mosaic-bw-2 {
+    grid-column: 8 / span 5;
     grid-row: 13 / span 6;
 }
 
 
+/* =========================================================
+   FINAL DO MOSAICO
+   ========================================================= */
+
+.mosaic-15 {
+    grid-column: 1 / span 3;
+    grid-row: 15 / span 5;
+}
+
+.mosaic-3 {
+    grid-column: 4 / span 3;
+    grid-row: 15 / span 4;
+}
+
+.mosaic-17 {
+    grid-column: 7 / span 4;
+    grid-row: 19 / span 5;
+}
+
+.mosaic-18 {
+    grid-column: 1 / span 3;
+    grid-row: 20 / span 4;
+}
+
+.mosaic-19 {
+    grid-column: 10 / span 3;
+    grid-row: 19 / span 5;
+}
+
+
+/* =========================================================
+   LEGENDAS
+   ========================================================= */
+
+.memorabilia-mosaic .work {
+    position: relative;
+}
+
+.memorabilia-mosaic .work figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 12px 16px;
+
+    background: rgba(255, 255, 255, 0.88);
+    color: #111;
+
+    font-size: 16px;
+    line-height: 1.2;
+
+    opacity: 0;
+    transition: opacity 0.25s ease;
+
+    pointer-events: none;
+}
+
+.memorabilia-mosaic .work:hover figcaption {
+    opacity: 1;
+}
 /* =========================================================
    TEXTO
    ========================================================= */
@@ -701,118 +676,42 @@ footer {
     }
 
 
-   /* =========================================================
-   MEMORABÍLIA — MOBILE
-   ========================================================= */
-
 @media (max-width: 700px) {
 
-    .memorabilia-main {
-        width: 100%;
-        margin-bottom: 70px;
-    }
-
-    .memorabilia-main figcaption {
-        font-size: 15px;
-        padding-top: 8px;
-    }
-
-
-    .memorabilia-pair {
-        width: 100%;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-        margin-bottom: 90px;
-    }
-
-
     .memorabilia-mosaic {
-
         width: 100%;
-        margin-bottom: 100px;
-
         grid-template-columns: repeat(2, 1fr);
-
         grid-auto-rows: auto;
-
         column-gap: 8px;
         row-gap: 8px;
+        margin-bottom: 100px;
     }
 
-
-    /* No telemóvel deixamos o mosaico
-       voltar a uma composição simples,
-       porque 12 colunas seriam demasiado apertadas. */
-
-    .mosaic-7 {
-        grid-column: 1 / span 1;
-        grid-row: auto;
+    .mosaic-item {
+        grid-column: auto !important;
+        grid-row: auto !important;
     }
 
-    .mosaic-8 {
-        grid-column: 2 / span 1;
-        grid-row: auto;
-    }
+    /* Algumas imagens continuam maiores */
 
-    .mosaic-9 {
-        grid-column: 1 / span 1;
-        grid-row: auto;
-    }
-
-    .mosaic-10 {
-        grid-column: 2 / span 1;
-        grid-row: auto;
-    }
-
-    .mosaic-11 {
-        grid-column: 1 / span 2;
-        grid-row: auto;
-    }
-
-    .mosaic-12 {
-        grid-column: 1 / span 1;
-        grid-row: auto;
-    }
-
-    .mosaic-13 {
-        grid-column: 2 / span 1;
-        grid-row: auto;
-    }
-
-    .mosaic-14 {
-        grid-column: 1 / span 1;
-        grid-row: auto;
-    }
-
-    .mosaic-15 {
-        grid-column: 2 / span 1;
-        grid-row: auto;
-    }
-
-    .mosaic-3 {
-        grid-column: 1 / span 1;
-        grid-row: auto;
-    }
-
-    .mosaic-17 {
-        grid-column: 2 / span 1;
-        grid-row: auto;
-    }
-
-    .mosaic-18 {
-        grid-column: 1 / span 2;
-        grid-row: auto;
-    }
-
+    .mosaic-0,
+    .mosaic-bw-1,
+    .mosaic-bw-2,
+    .mosaic-17,
     .mosaic-19 {
-        grid-column: 1 / span 2;
-        grid-row: auto;
+        grid-column: span 2 !important;
     }
 
-
-    .memorabilia-text {
+    .memorabilia-mosaic .work figcaption {
+        position: static;
+        opacity: 1;
         width: 100%;
+        background: none;
+        padding: 8px 0 0;
+        font-size: 15px;
     }
+
+}
 
 }
 .project-title {
