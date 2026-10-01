@@ -947,26 +947,26 @@ footer {
 }
 
 
-/* =========================
-   CAROUSEL
-   ========================= */
+ /* =========================
+    CAROUSEL
+    ========================= */
 
 #deja-vu .film-carousel {
     position: relative;
-    width: 80%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1400px;
     margin: 0 auto 120px;
 }
 
 #deja-vu .carousel-slides {
     position: relative;
-    width: 80%;
+    width: 100%;
 }
 
 #deja-vu .carousel-slide {
     display: none;
     position: relative;
-    width: 80%;
+    width: 100%;
     margin: 0;
 }
 
@@ -976,9 +976,10 @@ footer {
 
 #deja-vu .carousel-slide img {
     display: block;
-    width: 80%;
+    width: 100%;
     height: auto;
 }
+
 
 /* Setas */
 
@@ -993,7 +994,7 @@ footer {
     background: none;
     border: none;
 
-    padding: 20px;
+    padding: 10px;
 
     font-family: inherit;
     font-size: 42px;
@@ -1006,11 +1007,11 @@ footer {
 }
 
 #deja-vu .carousel-prev {
-    left: 0;
+    left: 5px;
 }
 
 #deja-vu .carousel-next {
-    right: 0;
+    right: 5px;
 }
 
 #deja-vu .carousel-prev:hover,
@@ -1019,6 +1020,32 @@ footer {
 }
 
 
+/* Caption */
+
+#deja-vu .carousel-slide figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 10px 14px;
+
+    background: rgba(255, 255, 255, 0.88);
+
+    font-size: 14px;
+    line-height: 1.3;
+
+    opacity: 0;
+    transition: opacity 0.25s ease;
+
+    pointer-events: none;
+}
+
+#deja-vu .carousel-slide:hover figcaption {
+    opacity: 1;
+}
 /* =========================
    SINOPSE + FICHA TÉCNICA
    ========================= */
