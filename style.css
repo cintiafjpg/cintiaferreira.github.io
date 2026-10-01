@@ -947,14 +947,14 @@ footer {
 }
 
 
- /* =========================
-    CAROUSEL
-    ========================= */
+/* =========================
+   CAROUSEL
+   ========================= */
 
 #deja-vu .film-carousel {
     position: relative;
-    width: 100%;
-    max-width: 1400px;
+    width: 75%;
+    max-width: 1100px;
     margin: 0 auto 120px;
 }
 
@@ -979,7 +979,6 @@ footer {
     width: 100%;
     height: auto;
 }
-
 
 /* Setas */
 
