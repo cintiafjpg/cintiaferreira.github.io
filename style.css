@@ -1019,33 +1019,28 @@ footer {
     opacity: 0.5;
 }
 
-
 /* Caption */
 
 #deja-vu .carousel-slide figcaption {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    right: 10px;
+    bottom: 8px;
+    left: auto;
 
-    width: 100%;
-    box-sizing: border-box;
+    width: auto;
 
-    padding: 10px 14px;
+    padding: 3px 6px;
 
-    background: rgba(255, 255, 255, 0.88);
+    background: rgba(255, 255, 255, 0.75);
 
-    font-size: 14px;
-    line-height: 1.3;
+    font-size: 11px;
+    line-height: 1.2;
 
-    opacity: 0;
-    transition: opacity 0.25s ease;
+    opacity: 1;
 
     pointer-events: none;
 }
 
-#deja-vu .carousel-slide:hover figcaption {
-    opacity: 1;
-}
 /* =========================
    SINOPSE + FICHA TÉCNICA
    ========================= */
