@@ -4,22 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Concertos — Cíntia Ferreira</title>
+
     <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .concerts-grid {
+            columns: 3 240px;
+            column-gap: 12px;
+            margin-top: 2rem;
+        }
+
+        .concerts-grid figure {
+            margin: 0 0 12px;
+            break-inside: avoid;
+        }
+
+        .concerts-grid img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .concerts-back {
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 600px) {
+            .concerts-grid {
+                columns: 2 140px;
+                column-gap: 8px;
+            }
+
+            .concerts-grid figure {
+                margin-bottom: 8px;
+            }
+        }
+    </style>
 </head>
+
 <body>
+
     <main class="commissions-page">
+
         <div class="project-title commissions-title">
             <em>Concertos</em>
         </div>
 
-        <div class="commissions-grid">
-            <!-- Aqui vamos inserir as fotografias das pastas 4 e 5 -->
+        <div class="concerts-grid">
+
+            <!-- Pasta 4: Branca -->
+
+            <figure><img src="images/4/img20240918_21183120-1_resultado.jpg" alt="Concerto" loading="lazy"></figure>
+            <figure><img src="images/4/img20240918_21191065-1_resultado.jpg" alt="Concerto" loading="lazy"></figure>
+            <figure><img src="images/4/img20240918_21310755-1_resultado.jpg" alt="Concerto" loading="lazy"></figure>
+            <figure><img src="images/4/img20240918_21370913-1_resultado.jpg" alt="Concerto" loading="lazy"></figure>
+
+            <!-- Pasta 5: Pina -->
+
+            <figure><img src="images/5/2025_NinguemCossoul_035_resultado.jpg" alt="Concerto" loading="lazy"></figure>
+            <figure><img src="images/5/Captura%20de%20Ecr%C3%A3%20(488)_resultado.png" alt="Concerto" loading="lazy"></figure>
+            <figure><img src="images/5/Captura%20de%20Ecr%C3%A3%20(489)_resultado.png" alt="Concerto" loading="lazy"></figure>
+            <figure><img src="images/5/DSC07827_resultado.jpg" alt="Concerto" loading="lazy"></figure>
+            <figure><img src="images/5/img0191_resultado.jpg" alt="Concerto" loading="lazy"></figure>
+            <figure><img src="images/5/img046_resultado.jpg" alt="Concerto" loading="lazy"></figure>
+            <figure><img src="images/5/img546_resultado.jpg" alt="Concerto" loading="lazy"></figure>
+            <figure><img src="images/5/img547_resultado.jpg" alt="Concerto" loading="lazy"></figure>
+            <figure><img src="images/5/img553_resultado.jpg" alt="Concerto" loading="lazy"></figure>
+            <figure><img src="images/5/img554_resultado.jpg" alt="Concerto" loading="lazy"></figure>
+            <figure><img src="images/5/img563_resultado.jpg" alt="Concerto" loading="lazy"></figure>
+            <figure><img src="images/5/img564_resultado.jpg" alt="Concerto" loading="lazy"></figure>
+            <figure><img src="images/5/img565_resultado.jpg" alt="Concerto" loading="lazy"></figure>
+            <figure><img src="images/5/img566_resultado.jpg" alt="Concerto" loading="lazy"></figure>
+            <figure><img src="images/5/img567_resultado.jpg" alt="Concerto" loading="lazy"></figure>
+            <figure><img src="images/5/pina073_resultado.jpg" alt="Concerto" loading="lazy"></figure>
+            <figure><img src="images/5/pina081_resultado.jpg" alt="Concerto" loading="lazy"></figure>
+            <figure><img src="images/5/pina093_resultado.jpg" alt="Concerto" loading="lazy"></figure>
+
         </div>
 
         <div class="commissions-back">
             <a href="index.html">← Commissions</a>
         </div>
+
     </main>
+
 </body>
 </html>
