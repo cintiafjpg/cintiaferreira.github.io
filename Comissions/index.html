@@ -6,90 +6,207 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Commissions — Cíntia Ferreira</title>
     <link rel="stylesheet" href="../style.css">
+
     <style>
+        .commissions-page {
+            min-height: 100vh;
+            padding: 190px 25px 80px;
+        }
+
+        .commissions-heading {
+            font-size: clamp(30px, 4vw, 60px);
+            font-weight: 400;
+            text-align: center;
+            margin: 0 0 65px;
+        }
+
         .commissions-list {
-            margin-top: 3rem;
+            width: min(620px, 65%);
+            margin: 0 auto;
+        }
+
+        .commission-item {
+            position: relative;
+            width: fit-content;
+            max-width: 100%;
+            margin: 0 0 24px;
         }
 
         .commission-link {
-            display: block;
-            position: relative;
-            width: fit-content;
-            margin: 0 0 1.2rem;
-            font-size: clamp(1.4rem, 3vw, 2.5rem);
+            display: inline-block;
+            color: #111;
             text-decoration: none;
+            font-size: clamp(25px, 3vw, 42px);
+            line-height: 1.1;
+            transition: opacity .2s ease;
+        }
+
+        .commission-link:hover {
+            opacity: .5;
         }
 
         .commission-preview {
-            display: none;
             position: absolute;
-            left: calc(100% + 2rem);
-            top: 50%;
-            transform: translateY(-50%);
+            display: block;
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+
             width: 220px;
             max-height: 260px;
-            object-fit: cover;
-            z-index: 10;
-            pointer-events: none;
+            height: auto;
+            object-fit: contain;
+
+            left: calc(100% + 35px);
+            top: 50%;
+            transform: translateY(-50%);
+            transition: opacity .2s ease;
+            z-index: 20;
         }
 
-        .commission-link:hover .commission-preview {
-            display: block;
+        .commission-item:hover .commission-preview {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .commissions-back {
+            margin: 100px 0 0;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .commissions-back a {
+            color: #111;
+            text-decoration: none;
+        }
+
+        .commissions-back a:hover {
+            opacity: .5;
         }
 
         @media (max-width: 700px) {
+            .commissions-page {
+                padding: 320px 20px 60px;
+            }
+
+            .commissions-heading {
+                text-align: left;
+                margin-bottom: 45px;
+            }
+
+            .commissions-list {
+                width: 100%;
+                margin: 0;
+            }
+
+            .commission-link {
+                font-size: 30px;
+            }
+
             .commission-preview {
-                display: none !important;
+                display: none;
+            }
+
+            .commission-item {
+                margin-bottom: 22px;
+            }
+
+            .commissions-back {
+                text-align: left;
             }
         }
     </style>
 </head>
+
 <body>
-    <main class="commissions-page">
-        <div class="project-title commissions-title">
-            <em>Commissions</em>
+
+<header>
+    <div class="site-title">
+        CÍNTIA<br>
+        FERREIRA
+    </div>
+
+    <nav>
+        <a href="../index.html#evidencias"><em>Evidências</em></a>
+        <a href="../index.html#memorabilia"><em>Memorabília</em></a>
+        <a href="../index.html#nosbonslugareshasemprevento">
+            <em>nos bons lugares há sempre vento</em>
+        </a>
+        <a href="../index.html#deja-vu"><em>déjà vu</em></a>
+        <a href="../index.html#nome-de-guerra">
+            <em>Nome de Guerra / Coordenadas da Sede</em>
+        </a>
+        <a href="../index.html#bichos"><em>bichos</em></a>
+        <a href="index.html">Commissions</a>
+        <div class="space"></div>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#cv">CV</a>
+        <a href="../index.html#contact">Contact</a>
+    </nav>
+</header>
+
+<main class="commissions-page">
+
+    <h1 class="commissions-heading"><em>Commissions</em></h1>
+
+    <div class="commissions-list">
+
+        <div class="commission-item">
+            <a class="commission-link" href="1.joias.html">Joias</a>
+            <img class="commission-preview"
+                 src="images/1/BJ317.jpg"
+                 alt="Joias" loading="lazy">
         </div>
 
-        <nav class="commissions-list">
-            <a class="commission-link" href="1.joias.html">
-                Joias
-                <img class="commission-preview" src="images/1/BJ317.jpg" alt="">
-            </a>
-
-            <a class="commission-link" href="2.bienal.html">
-                Bienal
-                <img class="commission-preview" src="images/2/BJ317.jpg" alt="">
-            </a>
-
-            <a class="commission-link" href="3.broteria.html">
-                Brotéria
-                <img class="commission-preview" src="images/3/BJ317.jpg" alt="">
-            </a>
-
-            <a class="commission-link" href="4.branca.html">
-                Concertos
-                <img class="commission-preview" src="images/4/BJ317.jpg" alt="">
-            </a>
-
-            <a class="commission-link" href="6.stopnow.html">
-                Stopnow
-                <img class="commission-preview" src="images/6/BJ317.jpg" alt="">
-            </a>
-
-            <a class="commission-link" href="7.ensaioamor.html">
-                Ensaio Amor
-                <img class="commission-preview" src="images/7/BJ317.jpg" alt="">
-            </a>
-
-            <a class="commission-link" href="8.christine.html">
-                Christine
-                <img class="commission-preview" src="images/8/BJ317.jpg" alt="">
-            </a>
-        </nav>
-
-        <div class="commissions-back">
-            <a href="../index.html">← Back</a>
+        <div class="commission-item">
+            <a class="commission-link" href="2.bienal.html">Bienal</a>
+            <img class="commission-preview"
+                 src="images/2/BJ317.jpg"
+                 alt="Bienal" loading="lazy">
         </div>
-    </main>
+
+        <div class="commission-item">
+            <a class="commission-link" href="3.broteria.html">Brotéria</a>
+            <img class="commission-preview"
+                 src="images/3/BJ317.jpg"
+                 alt="Brotéria" loading="lazy">
+        </div>
+
+        <div class="commission-item">
+            <a class="commission-link" href="4.branca.html">Concertos</a>
+            <img class="commission-preview"
+                 src="images/4/img20240918_21183120-1_resultado.jpg"
+                 alt="Concertos" loading="lazy">
+        </div>
+
+        <div class="commission-item">
+            <a class="commission-link" href="6.stopnow.html">Stopnow</a>
+            <img class="commission-preview"
+                 src="images/6/BJ317.jpg"
+                 alt="Stopnow" loading="lazy">
+        </div>
+
+        <div class="commission-item">
+            <a class="commission-link" href="7.ensaioamor.html">Ensaio Amor</a>
+            <img class="commission-preview"
+                 src="images/7/BJ317.jpg"
+                 alt="Ensaio Amor" loading="lazy">
+        </div>
+
+        <div class="commission-item">
+            <a class="commission-link" href="8.christine.html">Christine</a>
+            <img class="commission-preview"
+                 src="images/8/BJ317.jpg"
+                 alt="Christine" loading="lazy">
+        </div>
+
+    </div>
+
+    <div class="commissions-back">
+        <a href="../index.html">← Back to portfolio</a>
+    </div>
+
+</main>
+
 </body>
 </html>
