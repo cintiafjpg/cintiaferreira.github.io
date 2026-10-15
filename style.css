@@ -979,6 +979,28 @@ nav .space {
     flex: 0 0 300px;
 }
 
+#deja-vu .film-credits .film-links {
+    width: 100%;
+    margin: 30px 0 0;
+}
+
+#deja-vu .film-credits .film-links p {
+    margin: 0 0 8px;
+}
+
+#deja-vu .film-credits .film-links a,
+#deja-vu .film-credits .film-links a:visited {
+    color: #111;
+    text-decoration: underline;
+    text-decoration-color: #111;
+}
+
+#deja-vu .film-credits .film-links a:hover,
+#deja-vu .film-credits .film-links a:focus {
+    color: #111;
+    opacity: 0.5;
+}
+
 #deja-vu .film-info h3,
 #deja-vu .film-request h3 {
     margin-top: 0;
