@@ -1509,4 +1509,57 @@ footer {
         max-width: 360px;
         gap: 10px;
     }
+
+/* FIX — MEMORABILIA BLACK AND WHITE IMAGES */
+
+#memorabilia .memorabilia-bw-pair {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    width: 100% !important;
+    max-width: 360px !important;
+    min-width: 0 !important;
+    gap: 10px !important;
+    align-items: start !important;
+}
+
+#memorabilia .memorabilia-bw-pair figure {
+    display: block !important;
+    width: 100% !important;
+    max-width: 175px !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+}
+
+#memorabilia .memorabilia-bw-pair img {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    max-width: 175px !important;
+    height: auto !important;
+    max-height: 260px !important;
+    object-fit: contain !important;
+    margin: 0 !important;
+}
+
+#memorabilia .memorabilia-bottom {
+    grid-template-columns: minmax(0, 360px) minmax(0, 1fr) !important;
+    gap: 35px !important;
+    align-items: start !important;
+    min-width: 0 !important;
+}
+
+#memorabilia .memorabilia-text {
+    min-width: 0 !important;
+    max-width: 500px !important;
+}
+
+@media (max-width: 700px) {
+    #memorabilia .memorabilia-bottom {
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+
+    #memorabilia .memorabilia-bw-pair {
+        max-width: 320px !important;
+    }
 }
