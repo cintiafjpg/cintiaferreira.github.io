@@ -1455,3 +1455,58 @@ footer {
         margin-bottom: 60px;
     }
 }
+
+/* MEMORABILIA — SEPARAR MOSAICO E FOTOGRAFIAS A PRETO E BRANCO */
+
+#memorabilia .memorabilia-bottom {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
+    gap: 55px;
+    align-items: start;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+#memorabilia .memorabilia-bw-pair {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    width: 100%;
+    max-width: 440px;
+    align-items: start;
+}
+
+#memorabilia .memorabilia-bw-pair figure {
+    margin: 0;
+    min-width: 0;
+}
+
+#memorabilia .memorabilia-bw-pair img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#memorabilia .memorabilia-text {
+    width: 100%;
+    max-width: 500px;
+    margin: 0;
+}
+
+#memorabilia .memorabilia-text p {
+    margin-top: 0;
+}
+
+@media (max-width: 700px) {
+    #memorabilia .memorabilia-bottom {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-top: 45px;
+    }
+
+    #memorabilia .memorabilia-bw-pair {
+        max-width: 360px;
+        gap: 10px;
+    }
+}
