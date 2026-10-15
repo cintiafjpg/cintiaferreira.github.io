@@ -888,19 +888,51 @@ nav .space {
     cursor: pointer;
 }
 
+
+/* Setas do carrossel */
+
+#deja-vu .carousel-prev,
+#deja-vu .carousel-next {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 52px;
+    height: 52px;
+    padding: 0;
+
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid #111;
+    border-radius: 50%;
+
+    font-family: inherit;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1;
+    color: #111;
+
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
 #deja-vu .carousel-prev {
-    left: 5px;
+    left: 12px;
 }
 
 #deja-vu .carousel-next {
-    right: 5px;
+    right: 12px;
 }
 
 #deja-vu .carousel-prev:hover,
 #deja-vu .carousel-next:hover {
-    opacity: 0.5;
+    background: #111;
+    color: #fff;
 }
-
 /* Caption */
 
 #deja-vu .carousel-slide figcaption {
@@ -981,26 +1013,19 @@ nav .space {
    LINKS
    ========================= */
 
-#deja-vu .film-links {
-    width: 100%;
-    max-width: 1200px;
 
-    margin: 0 auto 120px;
-}
-
-#deja-vu .film-links p {
-    margin: 0 0 8px;
-}
-
-#deja-vu .film-links a {
-    color: inherit;
-    text-decoration: none;
-}
-
-#deja-vu .film-links a:hover {
+#deja-vu .film-links a,
+#deja-vu .film-links a:visited {
+    color: #111;
     text-decoration: underline;
+    text-decoration-color: #111;
 }
 
+#deja-vu .film-links a:hover,
+#deja-vu .film-links a:focus {
+    color: #111;
+    opacity: 0.5;
+}
 
 /* =========================
    REQUEST THE FILM
