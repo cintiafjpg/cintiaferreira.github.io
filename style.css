@@ -870,51 +870,7 @@ nav .space {
 #deja-vu .carousel-next {
     position: absolute;
     top: 50%;
-    z-index: 10;
-    transform: translateY(-50%);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: auto;
-    height: auto;
-    padding: 10px;
-
-    background: transparent;
-    border: none;
-    border-radius: 0;
-
-    font-family: inherit;
-    font-size: 48px;
-    font-weight: 300;
-    line-height: 1;
-    color: #fff;
-
-    cursor: pointer;
-    transition: opacity 0.2s ease;
-}
-
-#deja-vu .carousel-prev {
-    left: 12px;
-}
-
-#deja-vu .carousel-next {
-    right: 12px;
-}
-
-#deja-vu .carousel-prev:hover,
-#deja-vu .carousel-next:hover {
-    opacity: 0.6;
-}
-
-/* Setas do carrossel */
-
-#deja-vu .carousel-prev,
-#deja-vu .carousel-next {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
+    z-index: 100;
     transform: translateY(-50%);
 
     display: flex;
