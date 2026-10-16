@@ -959,24 +959,23 @@ nav .space {
    SINOPSE + FICHA TÉCNICA
    ========================= */
 
-#deja-vu .film-info {
-    display: flex;
-    align-items: flex-start;
-    gap: 100px;
 
+#deja-vu .film-info {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    align-items: start;
+    gap: 100px;
     width: 100%;
     max-width: 1200px;
-
     margin: 0 auto 100px;
 }
 
 #deja-vu .film-synopsis {
-    flex: 1 1 0;
     max-width: 600px;
 }
 
 #deja-vu .film-credits {
-    flex: 0 0 300px;
+    min-width: 0;
 }
 
 #deja-vu .film-credits .film-links {
@@ -1021,9 +1020,7 @@ nav .space {
 
 #deja-vu .film-screening {
     width: 100%;
-    max-width: 1200px;
-
-    margin: 0 auto 60px;
+    margin: 35px 0 0;
 }
 
 #deja-vu .film-screening p {
