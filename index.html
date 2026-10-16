@@ -890,15 +890,18 @@ document.addEventListener("DOMContentLoaded", function () {
         slides[current].classList.add("active");
     }
 
-    previous.addEventListener("click", function () {
-        showSlide(current - 1);
-    });
-
-    next.addEventListener("click", function () {
-        showSlide(current + 1);
-    });
-
+    previous.addEventListener("click", function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    showSlide(current - 1);
 });
+
+next.addEventListener("click", function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    showSlide(current + 1);
+});
+
 </script>
 </body>
 
