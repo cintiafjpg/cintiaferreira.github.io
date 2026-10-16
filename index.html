@@ -879,10 +879,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const previous = carousel.querySelector(".carousel-prev");
     const next = carousel.querySelector(".carousel-next");
 
+    if (slides.length === 0 || !previous || !next) return;
+
     let current = 0;
 
     function showSlide(index) {
-
         slides[current].classList.remove("active");
 
         current = (index + slides.length) % slides.length;
@@ -891,17 +892,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     previous.addEventListener("click", function (event) {
-    event.preventDefault();
-    event.stopPropagation();
-    showSlide(current - 1);
-});
+        event.preventDefault();
+        event.stopPropagation();
+        showSlide(current - 1);
+    });
 
-next.addEventListener("click", function (event) {
-    event.preventDefault();
-    event.stopPropagation();
-    showSlide(current + 1);
-});
+    next.addEventListener("click", function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        showSlide(current + 1);
+    });
 
+});
 </script>
 </body>
 
