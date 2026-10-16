@@ -8,10 +8,11 @@ html {
     scroll-behavior: smooth;
 }
 
+
 body {
     margin: 0;
     background: #fff;
-    color: #111;
+    color: #193D66;
     font-family: "EB Garamond", Garamond, serif;
     font-size: 18px;
     line-height: 1.25;
@@ -50,7 +51,7 @@ nav {
 
 nav a {
     display: block;
-    color: #111;
+    color: #193D66;
     text-decoration: none;
     transition: opacity .2s ease;
 }
@@ -85,7 +86,6 @@ nav .space {
     font-size: clamp(30px, 4vw, 60px);
     margin-bottom: 90px;
 }
-
 
 /* PROJECT INFORMATION */
 
