@@ -1020,11 +1020,18 @@ nav .space {
 
 #deja-vu .film-screening {
     width: 100%;
-    margin: 35px 0 0;
+    margin: 60px 0 0;
 }
 
 #deja-vu .film-screening p {
     margin: 0;
+}
+
+#deja-vu .film-screening a,
+#deja-vu .film-screening a:visited,
+#deja-vu .film-screening a:hover,
+#deja-vu .film-screening a:focus {
+    color: #111;
 }
 
 
