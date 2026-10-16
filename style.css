@@ -863,31 +863,6 @@ nav .space {
     height: auto;
 }
 
-/* Setas */
-
-#deja-vu .carousel-prev,
-#deja-vu .carousel-next {
-    position: absolute;
-    top: 50%;
-    z-index: 5;
-
-    transform: translateY(-50%);
-
-    background: none;
-    border: none;
-
-    padding: 10px;
-
-    font-family: inherit;
-    font-size: 42px;
-    font-weight: 300;
-    line-height: 1;
-
-    color: #111;
-
-    cursor: pointer;
-}
-
 
 /* Setas do carrossel */
 
@@ -895,29 +870,29 @@ nav .space {
 #deja-vu .carousel-next {
     position: absolute;
     top: 50%;
-    z-index: 5;
+    z-index: 10;
     transform: translateY(-50%);
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    width: 52px;
-    height: 52px;
-    padding: 0;
+    width: auto;
+    height: auto;
+    padding: 10px;
 
-    background: rgba(255, 255, 255, 0.92);
-    border: 1px solid #111;
-    border-radius: 50%;
+    background: transparent;
+    border: none;
+    border-radius: 0;
 
     font-family: inherit;
-    font-size: 40px;
-    font-weight: 400;
+    font-size: 48px;
+    font-weight: 300;
     line-height: 1;
-    color: #111;
+    color: #fff;
 
     cursor: pointer;
-    transition: background 0.2s ease, color 0.2s ease;
+    transition: opacity 0.2s ease;
 }
 
 #deja-vu .carousel-prev {
@@ -930,8 +905,51 @@ nav .space {
 
 #deja-vu .carousel-prev:hover,
 #deja-vu .carousel-next:hover {
-    background: #111;
+    opacity: 0.6;
+}
+
+/* Setas do carrossel */
+
+#deja-vu .carousel-prev,
+#deja-vu .carousel-next {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: auto;
+    height: auto;
+    padding: 10px;
+
+    background: transparent;
+    border: none;
+    border-radius: 0;
+
+    font-family: inherit;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 1;
     color: #fff;
+
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+#deja-vu .carousel-prev {
+    left: 12px;
+}
+
+#deja-vu .carousel-next {
+    right: 12px;
+}
+
+#deja-vu .carousel-prev:hover,
+#deja-vu .carousel-next:hover {
+    opacity: 0.6;
 }
 /* Caption */
 
