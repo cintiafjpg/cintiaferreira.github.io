@@ -1223,7 +1223,23 @@ nav .space {
 
 }
 
-/* Vídeos maiores — apenas Nome de Guerra */
+
+/* Nome de Guerra / Coordenadas da Sede */
+
+/* Fotografia inicial */
+#nome-de-guerra .nome-de-guerra-image {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 40px;
+}
+
+#nome-de-guerra .nome-de-guerra-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Separação dos dois projetos */
 #nome-de-guerra .nome-guerra-info {
     display: flex;
     flex-direction: column;
@@ -1234,7 +1250,7 @@ nav .space {
     width: 100%;
 }
 
-
+/* Vídeos com proporção normal do YouTube */
 #nome-de-guerra .video-wrapper {
     position: relative;
     width: 100%;
@@ -1246,10 +1262,9 @@ nav .space {
 
 #nome-de-guerra .video-wrapper iframe {
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
+    display: block;
     width: 100%;
     height: 100%;
     border: 0;
 }
-
