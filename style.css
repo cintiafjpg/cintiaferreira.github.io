@@ -12,7 +12,7 @@ html {
 body {
     margin: 0;
     background: #fff;
-    color: #176BA0;
+    color: #354888;
     font-family: "EB Garamond", Garamond, serif;
     font-size: 18px;
     line-height: 1.25;
@@ -51,7 +51,7 @@ nav {
 
 nav a {
     display: block;
-    color: #176BA0;
+    color: #354888;
     text-decoration: none;
     transition: opacity .2s ease;
 }
