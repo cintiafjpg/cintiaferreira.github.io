@@ -1222,3 +1222,25 @@ nav .space {
     }
 
 }
+
+/* Vídeos maiores — apenas Nome de Guerra */
+#nome-de-guerra .nome-guerra-info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#nome-de-guerra .nome-guerra-work {
+    width: 100%;
+}
+
+#nome-de-guerra .video-wrapper {
+    width: 100%;
+    max-width: 1100px;
+    margin: 24px auto;
+}
+
+#nome-de-guerra .video-wrapper iframe {
+    width: 100%;
+}
+
