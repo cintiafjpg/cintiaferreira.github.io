@@ -49,6 +49,26 @@ nav {
     text-align: right;
     pointer-events: auto;
 }
+/* MENU — esconder ao fazer scroll e mostrar ao passar o rato */
+
+nav.menu-hidden {
+    opacity: 0;
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity .3s ease;
+}
+
+nav.menu-hidden a {
+    pointer-events: none;
+}
+
+nav.menu-hidden:hover {
+    opacity: 1;
+}
+
+nav.menu-hidden:hover a {
+    pointer-events: auto;
+}
 
 nav a {
     display: block;
