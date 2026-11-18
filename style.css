@@ -30,7 +30,6 @@ header {
     padding: 22px 25px;
     z-index: 100;
     pointer-events: none;
-    background: #fff;
 }
 
 .site-title {
@@ -150,7 +149,7 @@ nav .space {
 
 .project-links a,
 .project-links a:visited {
-    color: #111;
+    color: #003C71;
     text-decoration: none;
 }
 
@@ -390,6 +389,7 @@ nav .space {
     width: 100%;
     max-width: 360px;
     align-items: start;
+    transform: translateX(20px);
 }
 
 #memorabilia .memorabilia-bw-pair figure {
@@ -965,7 +965,7 @@ nav .space {
 
 #deja-vu .film-credits .film-links a,
 #deja-vu .film-credits .film-links a:visited {
-    color: #111;
+    color: #003C71;
     text-decoration: underline;
     text-decoration-color: #111;
 }
@@ -1007,7 +1007,7 @@ nav .space {
 #deja-vu .film-screening a:visited,
 #deja-vu .film-screening a:hover,
 #deja-vu .film-screening a:focus {
-    color: #111;
+    color: #003C71;
 }
 
 
@@ -1018,14 +1018,14 @@ nav .space {
 
 #deja-vu .film-links a,
 #deja-vu .film-links a:visited {
-    color: #111;
+    color: #003C71;
     text-decoration: underline;
     text-decoration-color: #111;
 }
 
 #deja-vu .film-links a:hover,
 #deja-vu .film-links a:focus {
-    color: #111;
+    color:#003C71;
     opacity: 0.5;
 }
 
